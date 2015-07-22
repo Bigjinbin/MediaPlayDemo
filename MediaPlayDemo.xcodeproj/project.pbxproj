@@ -14,6 +14,12 @@
 		292676491B5F28930008DF1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292676481B5F28930008DF1D /* Images.xcassets */; };
 		2926764C1B5F28930008DF1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2926764A1B5F28930008DF1D /* LaunchScreen.xib */; };
 		292676581B5F28930008DF1D /* MediaPlayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 292676571B5F28930008DF1D /* MediaPlayDemoTests.m */; };
+		292676701B5F2AA90008DF1D /* JbButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2926766A1B5F2AA90008DF1D /* JbButton.m */; };
+		292676711B5F2AA90008DF1D /* UIView+JBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2926766D1B5F2AA90008DF1D /* UIView+JBExtension.m */; };
+		292676721B5F2AA90008DF1D /* UIView+JBQuickControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2926766F1B5F2AA90008DF1D /* UIView+JBQuickControl.m */; };
+		292676741B5F2AD30008DF1D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 292676731B5F2AD30008DF1D /* MediaPlayer.framework */; };
+		2926767D1B5F33EE0008DF1D /* dzs.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2926767B1B5F33EE0008DF1D /* dzs.mp4 */; };
+		2926767E1B5F33EE0008DF1D /* lalala.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2926767C1B5F33EE0008DF1D /* lalala.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,16 @@
 		292676511B5F28930008DF1D /* MediaPlayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MediaPlayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		292676561B5F28930008DF1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		292676571B5F28930008DF1D /* MediaPlayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaPlayDemoTests.m; sourceTree = "<group>"; };
+		292676691B5F2AA90008DF1D /* JbButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JbButton.h; sourceTree = "<group>"; };
+		2926766A1B5F2AA90008DF1D /* JbButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JbButton.m; sourceTree = "<group>"; };
+		2926766B1B5F2AA90008DF1D /* JBQuickControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBQuickControl.h; sourceTree = "<group>"; };
+		2926766C1B5F2AA90008DF1D /* UIView+JBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JBExtension.h"; sourceTree = "<group>"; };
+		2926766D1B5F2AA90008DF1D /* UIView+JBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JBExtension.m"; sourceTree = "<group>"; };
+		2926766E1B5F2AA90008DF1D /* UIView+JBQuickControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JBQuickControl.h"; sourceTree = "<group>"; };
+		2926766F1B5F2AA90008DF1D /* UIView+JBQuickControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JBQuickControl.m"; sourceTree = "<group>"; };
+		292676731B5F2AD30008DF1D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2926767B1B5F33EE0008DF1D /* dzs.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dzs.mp4; sourceTree = "<group>"; };
+		2926767C1B5F33EE0008DF1D /* lalala.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lalala.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292676741B5F2AD30008DF1D /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,8 @@
 		2926762F1B5F28920008DF1D = {
 			isa = PBXGroup;
 			children = (
+				292676731B5F2AD30008DF1D /* MediaPlayer.framework */,
+				292676681B5F2AA90008DF1D /* JBQuickControl */,
 				2926763A1B5F28930008DF1D /* MediaPlayDemo */,
 				292676541B5F28930008DF1D /* MediaPlayDemoTests */,
 				292676391B5F28930008DF1D /* Products */,
@@ -117,6 +136,22 @@
 				292676561B5F28930008DF1D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		292676681B5F2AA90008DF1D /* JBQuickControl */ = {
+			isa = PBXGroup;
+			children = (
+				2926767B1B5F33EE0008DF1D /* dzs.mp4 */,
+				2926767C1B5F33EE0008DF1D /* lalala.mp3 */,
+				292676691B5F2AA90008DF1D /* JbButton.h */,
+				2926766A1B5F2AA90008DF1D /* JbButton.m */,
+				2926766B1B5F2AA90008DF1D /* JBQuickControl.h */,
+				2926766C1B5F2AA90008DF1D /* UIView+JBExtension.h */,
+				2926766D1B5F2AA90008DF1D /* UIView+JBExtension.m */,
+				2926766E1B5F2AA90008DF1D /* UIView+JBQuickControl.h */,
+				2926766F1B5F2AA90008DF1D /* UIView+JBQuickControl.m */,
+			);
+			path = JBQuickControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				292676471B5F28930008DF1D /* Main.storyboard in Resources */,
+				2926767E1B5F33EE0008DF1D /* lalala.mp3 in Resources */,
 				2926764C1B5F28930008DF1D /* LaunchScreen.xib in Resources */,
 				292676491B5F28930008DF1D /* Images.xcassets in Resources */,
+				2926767D1B5F33EE0008DF1D /* dzs.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +258,10 @@
 			files = (
 				292676441B5F28930008DF1D /* ViewController.m in Sources */,
 				292676411B5F28930008DF1D /* AppDelegate.m in Sources */,
+				292676701B5F2AA90008DF1D /* JbButton.m in Sources */,
 				2926763E1B5F28930008DF1D /* main.m in Sources */,
+				292676711B5F2AA90008DF1D /* UIView+JBExtension.m in Sources */,
+				292676721B5F2AA90008DF1D /* UIView+JBQuickControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,10 +337,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.1;
 			};
 			name = Debug;
 		};
@@ -332,9 +372,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
+				SDKROOT = iphoneos8.1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -344,6 +384,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MediaPlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +395,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MediaPlayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
